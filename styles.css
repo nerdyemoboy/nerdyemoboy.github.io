@@ -1,0 +1,42 @@
+h1 {
+    color:#a88cea;
+}
+
+body {
+    background-image: url('https://media0.giphy.com/media/VFDeGtRSHswfe/giphy.gif');
+}
+p {
+    color: white;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 90vmin;
+  position: relative;
+  width: 100%;
+}
+
+@keyframes animate {
+  0% {
+    transform: scaleX(1.2) translateY(-100px);
+  }
+
+  100% {
+    transform: scaleX(.5) translateY(250px) ;
+  }
+}
+
+
+.rainbow {
+  animation: animate 1.5s .10s infinite alternate cubic-bezier(.5,0.05,1,.5);
+  background: red;
+  background-image: url("./josh.PNG");
+  border-radius: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  height: 90vmin;
+  margin: auto auto 0;
+  opacity: .9;
+  width: 90vmin;
+}
